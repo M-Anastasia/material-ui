@@ -18,6 +18,7 @@ const useMuiTheme = () => {
                 },
                 overrides: {
                     MuiButton: {
+                        padding: '10px 16px',
                         containedSecondary: {
                             "&:hover": {
                                 backgroundColor: 'transparent',
@@ -28,13 +29,21 @@ const useMuiTheme = () => {
                             width: '100%',
                             fontSize: '16px',
                             fontWeight: 'bold',
-                            padding: '10px 16px'
+                            padding: '10px 16px',
+                        },
+                        text: {
+                            padding: '10px 16px',
                         }
                     },
                     MuiPaper: {
                         root: {
                             boardingRadius: '8px',
                         }
+                    }
+                },
+                breakpoints: {
+                    values: {
+                        sm: 700,
                     }
                 }
             }
