@@ -4,13 +4,17 @@ const useMuiTheme = () => {
 
     return (
         createMuiTheme({
+                spacing: 4,
                 palette: {
                     primary: {
-                        main: '#0F4780'
+                        main: '#0F4780',
                     },
                     secondary: {
-                        main: '#6B64FF'
+                        main: '#6B64FF',
                     },
+                    error: {
+                        main: '#FF1744',
+                    }
                 },
                 overrides: {
                     MuiButton: {
